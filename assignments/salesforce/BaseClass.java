@@ -39,16 +39,7 @@ public class BaseClass {
 		 dom = new Shadow(driver);
 		//Shadow DOM implicit
 		dom.setImplicitWait(30);
-		/*
-		//Enter Incidents in Navigator Pane
-		dom.findElementByXPath("//input[@id='filter']").sendKeys("Incidents",Keys.ENTER);
-		//Click the Incidents text Link
-		dom.findElementByXPath("//mark[text()='Incidents']").click();
-		//Get the Frame details in WebElement
-		WebElement iframe = dom.findElementByXPath("//iframe[@id='gsft_main']");
-		//Switch to Frame
-		driver.switchTo().frame(iframe);*/
-	}
+			}
 	@AfterMethod
 	public void postConditions() {
 		//Close the Browser
