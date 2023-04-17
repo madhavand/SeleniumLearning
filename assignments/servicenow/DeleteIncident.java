@@ -13,9 +13,9 @@ public class DeleteIncident extends BaseClass {
 		driver.findElement(By.xpath("(//input[@class='form-control'])[1]")).sendKeys(incidentNumber,Keys.ENTER);
 		//Click the Incident Link
 		driver.findElement(By.linkText(incidentNumber)).click();
-		//Change the Urgency
 		//Click the Delete Button
 		driver.findElement(By.xpath("//button[@id='sysverb_delete']")).click();
+		//Click the Confirmation Ok Button
 		driver.findElement(By.xpath("//button[@id='ok_button']")).click();
 		}
 }
