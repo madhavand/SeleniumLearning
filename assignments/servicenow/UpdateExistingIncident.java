@@ -24,8 +24,10 @@ public class UpdateExistingIncident extends BaseClass {
 		driver.findElement(By.xpath("//button[@id='sysverb_update']")).click();
 		//Click the Incident Link
 		driver.findElement(By.linkText(incidentNumber)).click();
+		//Display the Updated Priority status
 		String urgencyStatus = driver.findElement(By.xpath("//select[@id='incident.urgency']//option[@selected='SELECTED']")).getText();
 		System.out.println(urgencyStatus);
+		//Display the Updated State status		
 		String stateStatus = driver.findElement(By.xpath("//select[@id='incident.state']//option[@selected='SELECTED']")).getText();
 		System.out.println(stateStatus);
 		}
